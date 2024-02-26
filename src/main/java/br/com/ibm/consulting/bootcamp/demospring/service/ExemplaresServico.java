@@ -21,7 +21,7 @@ public class ExemplaresServico {
         }
         // Aumenta a quantidade de exemplares (livros) existentes
         var quantidade = new Exemplares();
-        quantidade.setQuantidade(exemplares.getQuantidade() + 1);
+        quantidade.setQuantidade(+ quantidade.getQuantidade());
         return exemplaresRepository.saveAndFlush(exemplares);
 
     }
